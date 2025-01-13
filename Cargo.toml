@@ -1,0 +1,23 @@
+[package]
+name = "zk_kyc"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+solana-client = "1.18"  # Adjust to the latest version
+solana-sdk = "1.18"      # Adjust to the latest version
+solana-program = "1.18"  # Ensure this is included if you're using it
+tokio = { version = "1", features = ["full"] }  # Ensure tokio is included with full features
+getrandom = "0.2"        # Or another version that might be stable
+
+[features]
+anchor-debug = []
+custom-heap = []
+custom-panic = []
+
+[lib]
+crate-type = ["cdylib"]   # Ensure this line is included
+
+
+
+
